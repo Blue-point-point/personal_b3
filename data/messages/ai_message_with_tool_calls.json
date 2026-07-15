@@ -1,0 +1,41 @@
+{
+  "role": "assistant",
+  "content": "",
+  "tool_calls": [
+    {
+      "id": "call_001",
+      "name": "file_reader",
+      "args": {
+        "path": "docs/agent_intro.txt",
+        "max_chars": 2000
+      }
+    },
+    {
+      "id": "call_002",
+      "name": "read_and_convert",
+      "args": {
+        "path": "docs/agent_intro.txt",
+        "target_format": "markdown",
+        "max_chars": 2000
+      }
+    },
+    {
+      "id": "call_003",
+      "name": "code_executor",
+      "args": {
+        "code": "print('hello from code executor')\nprint(1 + 2)",
+        "timeout": 5
+      }
+    },
+    {
+      "id": "call_004",
+      "name": "analyze_and_convert",
+      "args": {
+        "path": "tables/results.csv",
+        "target_format": "markdown",
+        "max_rows_preview": 5,
+        "describe": true
+      }
+    }
+  ]
+}

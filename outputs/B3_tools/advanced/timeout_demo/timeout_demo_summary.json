@@ -1,0 +1,38 @@
+{
+  "retry_config": {
+    "max_retries": 2,
+    "base_delay_ms": 200,
+    "max_delay_ms": 1000,
+    "by_exception": {
+      "TimeoutError": {
+        "max_retries": 2,
+        "base_delay_ms": 200,
+        "max_delay_ms": 1000
+      },
+      "ConnectionError": {
+        "max_retries": 3,
+        "base_delay_ms": 200,
+        "max_delay_ms": 1500
+      }
+    }
+  },
+  "demo_args": {
+    "demo_key": "timeout-demo-case",
+    "sleep_seconds": 2.0,
+    "timeout_seconds": 1.0
+  },
+  "status": "error",
+  "sleep_seconds": 2.0,
+  "timeout_seconds": 1.0,
+  "timed_out": true,
+  "attempts_used": 3,
+  "retry_count": 2,
+  "recovered_after_retry": false,
+  "last_error_type": "TimeoutError",
+  "latency_ms": 3602.804,
+  "files": {
+    "tool_messages": "tool_messages.json",
+    "tool_call_log": "tool_call_log.jsonl",
+    "timeout_demo_summary": "timeout_demo_summary.json"
+  }
+}

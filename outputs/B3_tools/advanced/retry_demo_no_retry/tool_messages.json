@@ -1,0 +1,9 @@
+[
+  {
+    "role": "tool",
+    "tool_call_id": "call_retry_demo",
+    "name": "retry_demo_internal",
+    "content": "{\"skill_name\":\"retry_demo_internal\",\"status\":\"error\",\"input\":{\"demo_key\":\"retry-demo-case\",\"fail_times\":1},\"output\":null,\"error\":{\"type\":\"TimeoutError\",\"message\":\"simulated transient timeout on attempt 1\"},\"latency_ms\":1.293}",
+    "status": "error"
+  }
+]

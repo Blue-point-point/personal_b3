@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+*.pyo
+*.log
+*.tmp
+.DS_Store
+
+outputs/B3_tools/tool_cache.json
+outputs/B3_tools/**/*.jsonl
+outputs/B3_tools/**/*.log

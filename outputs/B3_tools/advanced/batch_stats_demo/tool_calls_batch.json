@@ -1,0 +1,113 @@
+{
+  "tool_calls": [
+    {
+      "id": "call_001",
+      "name": "calculator",
+      "args": {
+        "expression": "12345*6789"
+      }
+    },
+    {
+      "id": "call_002",
+      "name": "calculator",
+      "args": {
+        "expression": "12345*6789"
+      }
+    },
+    {
+      "id": "call_003",
+      "name": "calculator",
+      "args": {
+        "expression": "(1+2+3+4)*1000"
+      }
+    },
+    {
+      "id": "call_004",
+      "name": "calculator",
+      "args": {
+        "expression": "1/0"
+      }
+    },
+    {
+      "id": "call_005",
+      "name": "file_reader",
+      "args": {
+        "path": "docs/agent_intro.txt",
+        "max_chars": 2000
+      }
+    },
+    {
+      "id": "call_006",
+      "name": "file_reader",
+      "args": {
+        "path": "docs/agent_intro.txt",
+        "max_chars": 2000
+      }
+    },
+    {
+      "id": "call_007",
+      "name": "file_reader",
+      "args": {
+        "path": "docs/agent_intro.txt",
+        "max_chars": true
+      }
+    },
+    {
+      "id": "call_008",
+      "name": "local_file_search",
+      "args": {
+        "query": "Agent",
+        "root_dir": "docs",
+        "top_k": 5
+      }
+    },
+    {
+      "id": "call_009",
+      "name": "local_file_search",
+      "args": {
+        "query": "Agent",
+        "root_dir": "docs",
+        "top_k": 5
+      }
+    },
+    {
+      "id": "call_010",
+      "name": "table_analyzer",
+      "args": {
+        "path": "tables/results.csv",
+        "max_rows_preview": 5,
+        "describe": true
+      }
+    },
+    {
+      "id": "call_011",
+      "name": "table_analyzer",
+      "args": {
+        "path": "tables/results.csv",
+        "max_rows_preview": 5,
+        "describe": true
+      }
+    },
+    {
+      "id": "call_012",
+      "name": "format_converter",
+      "args": {
+        "text": "A\\nB\\nC",
+        "target_format": "markdown",
+        "output_filename": "converted_demo.md"
+      }
+    },
+    {
+      "id": "call_013",
+      "name": "unknown_tool",
+      "args": {
+        "foo": "bar"
+      }
+    },
+    {
+      "id": "call_014",
+      "name": "calculator",
+      "args": {}
+    }
+  ]
+}

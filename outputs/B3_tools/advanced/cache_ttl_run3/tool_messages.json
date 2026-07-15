@@ -1,0 +1,9 @@
+[
+  {
+    "role": "tool",
+    "tool_call_id": "call_001",
+    "name": "calculator",
+    "content": "{\"skill_name\":\"calculator\",\"status\":\"success\",\"input\":{\"expression\":\"12345*6789\"},\"output\":{\"result\":83810205},\"error\":null,\"latency_ms\":10.949}",
+    "status": "success"
+  }
+]

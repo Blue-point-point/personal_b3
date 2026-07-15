@@ -1,0 +1,9 @@
+[
+  {
+    "role": "tool",
+    "tool_call_id": "call_retry_demo",
+    "name": "retry_demo_internal",
+    "content": "{\"skill_name\":\"retry_demo_internal\",\"status\":\"success\",\"input\":{\"demo_key\":\"retry-demo-case\",\"fail_times\":1},\"output\":{\"demo_key\":\"retry-demo-case\",\"attempts\":2,\"recovered\":true,\"message\":\"retry demo succeeded after transient failure\"},\"error\":null,\"latency_ms\":201.898}",
+    "status": "success"
+  }
+]

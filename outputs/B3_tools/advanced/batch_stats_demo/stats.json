@@ -1,0 +1,195 @@
+{
+  "summary": {
+    "count": 70,
+    "success": 50,
+    "error": 20,
+    "failure_rate": 0.286,
+    "avg_latency_ms": 1.227,
+    "retried": 0,
+    "retry_rate": 0.0,
+    "avg_retry_count": 0.0,
+    "recovered_after_retry": 0,
+    "retry_recovery_rate": 0.0,
+    "cache_hits": 21,
+    "cache_hit_rate": 0.3,
+    "timeouts": 0,
+    "timeout_rate": 0.0,
+    "error_type_distribution": {
+      "ValueError": 15,
+      "ZeroDivisionError": 5
+    }
+  },
+  "by_tool": {
+    "calculator": {
+      "count": 25,
+      "success": 15,
+      "error": 10,
+      "failure_rate": 0.4,
+      "avg_latency_ms": 2.004,
+      "retried": 0,
+      "retry_rate": 0.0,
+      "avg_retry_count": 0.0,
+      "recovered_after_retry": 0,
+      "retry_recovery_rate": 0.0,
+      "cache_hits": 5,
+      "cache_hit_rate": 0.2,
+      "timeouts": 0,
+      "timeout_rate": 0.0,
+      "error_type_distribution": {
+        "ValueError": 5,
+        "ZeroDivisionError": 5
+      }
+    },
+    "file_reader": {
+      "count": 15,
+      "success": 10,
+      "error": 5,
+      "failure_rate": 0.333,
+      "avg_latency_ms": 0.21,
+      "retried": 0,
+      "retry_rate": 0.0,
+      "avg_retry_count": 0.0,
+      "recovered_after_retry": 0,
+      "retry_recovery_rate": 0.0,
+      "cache_hits": 6,
+      "cache_hit_rate": 0.4,
+      "timeouts": 0,
+      "timeout_rate": 0.0,
+      "error_type_distribution": {
+        "ValueError": 5
+      }
+    },
+    "format_converter": {
+      "count": 5,
+      "success": 5,
+      "error": 0,
+      "failure_rate": 0.0,
+      "avg_latency_ms": 0.819,
+      "retried": 0,
+      "retry_rate": 0.0,
+      "avg_retry_count": 0.0,
+      "recovered_after_retry": 0,
+      "retry_recovery_rate": 0.0,
+      "cache_hits": 0,
+      "cache_hit_rate": 0.0,
+      "timeouts": 0,
+      "timeout_rate": 0.0,
+      "error_type_distribution": {}
+    },
+    "local_file_search": {
+      "count": 10,
+      "success": 10,
+      "error": 0,
+      "failure_rate": 0.0,
+      "avg_latency_ms": 1.565,
+      "retried": 0,
+      "retry_rate": 0.0,
+      "avg_retry_count": 0.0,
+      "recovered_after_retry": 0,
+      "retry_recovery_rate": 0.0,
+      "cache_hits": 5,
+      "cache_hit_rate": 0.5,
+      "timeouts": 0,
+      "timeout_rate": 0.0,
+      "error_type_distribution": {}
+    },
+    "table_analyzer": {
+      "count": 10,
+      "success": 10,
+      "error": 0,
+      "failure_rate": 0.0,
+      "avg_latency_ms": 1.288,
+      "retried": 0,
+      "retry_rate": 0.0,
+      "avg_retry_count": 0.0,
+      "recovered_after_retry": 0,
+      "retry_recovery_rate": 0.0,
+      "cache_hits": 5,
+      "cache_hit_rate": 0.5,
+      "timeouts": 0,
+      "timeout_rate": 0.0,
+      "error_type_distribution": {}
+    },
+    "unknown_tool": {
+      "count": 5,
+      "success": 0,
+      "error": 5,
+      "failure_rate": 1.0,
+      "avg_latency_ms": 0.0,
+      "retried": 0,
+      "retry_rate": 0.0,
+      "avg_retry_count": 0.0,
+      "recovered_after_retry": 0,
+      "retry_recovery_rate": 0.0,
+      "cache_hits": 0,
+      "cache_hit_rate": 0.0,
+      "timeouts": 0,
+      "timeout_rate": 0.0,
+      "error_type_distribution": {
+        "ValueError": 5
+      }
+    }
+  },
+  "by_source": {
+    "cache": {
+      "count": 21,
+      "success": 21,
+      "error": 0,
+      "failure_rate": 0.0,
+      "avg_latency_ms": 0.089,
+      "retried": 0,
+      "retry_rate": 0.0,
+      "avg_retry_count": 0.0,
+      "recovered_after_retry": 0,
+      "retry_recovery_rate": 0.0,
+      "cache_hits": 21,
+      "cache_hit_rate": 1.0,
+      "timeouts": 0,
+      "timeout_rate": 0.0,
+      "error_type_distribution": {}
+    },
+    "live": {
+      "count": 34,
+      "success": 29,
+      "error": 5,
+      "failure_rate": 0.147,
+      "avg_latency_ms": 2.467,
+      "retried": 0,
+      "retry_rate": 0.0,
+      "avg_retry_count": 0.0,
+      "recovered_after_retry": 0,
+      "retry_recovery_rate": 0.0,
+      "cache_hits": 0,
+      "cache_hit_rate": 0.0,
+      "timeouts": 0,
+      "timeout_rate": 0.0,
+      "error_type_distribution": {
+        "ZeroDivisionError": 5
+      }
+    },
+    "skipped": {
+      "count": 15,
+      "success": 0,
+      "error": 15,
+      "failure_rate": 1.0,
+      "avg_latency_ms": 0.009,
+      "retried": 0,
+      "retry_rate": 0.0,
+      "avg_retry_count": 0.0,
+      "recovered_after_retry": 0,
+      "retry_recovery_rate": 0.0,
+      "cache_hits": 0,
+      "cache_hit_rate": 0.0,
+      "timeouts": 0,
+      "timeout_rate": 0.0,
+      "error_type_distribution": {
+        "ValueError": 15
+      }
+    }
+  },
+  "files": {
+    "tool_calls_batch": "tool_calls_batch.json",
+    "tool_messages": "tool_messages.json",
+    "tool_call_log": "tool_call_log.jsonl"
+  }
+}

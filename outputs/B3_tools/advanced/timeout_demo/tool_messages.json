@@ -1,0 +1,9 @@
+[
+  {
+    "role": "tool",
+    "tool_call_id": "call_timeout_demo",
+    "name": "timeout_demo_internal",
+    "content": "{\"skill_name\":\"timeout_demo_internal\",\"status\":\"error\",\"input\":{\"demo_key\":\"timeout-demo-case\",\"sleep_seconds\":2.0,\"timeout_seconds\":1.0},\"output\":null,\"error\":{\"type\":\"TimeoutError\",\"message\":\"tool execution exceeded timeout of 1 seconds\"},\"latency_ms\":3602.804}",
+    "status": "error"
+  }
+]

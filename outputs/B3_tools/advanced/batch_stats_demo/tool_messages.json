@@ -1,0 +1,100 @@
+[
+  {
+    "role": "tool",
+    "tool_call_id": "call_001",
+    "name": "calculator",
+    "content": "{\"skill_name\":\"calculator\",\"status\":\"success\",\"input\":{\"expression\":\"12345*6789\"},\"output\":{\"result\":83810205},\"error\":null,\"latency_ms\":9.749}",
+    "status": "success"
+  },
+  {
+    "role": "tool",
+    "tool_call_id": "call_002",
+    "name": "calculator",
+    "content": "{\"skill_name\":\"calculator\",\"status\":\"success\",\"input\":{\"expression\":\"12345*6789\"},\"output\":{\"result\":83810205},\"error\":null,\"latency_ms\":0.083}",
+    "status": "success"
+  },
+  {
+    "role": "tool",
+    "tool_call_id": "call_003",
+    "name": "calculator",
+    "content": "{\"skill_name\":\"calculator\",\"status\":\"success\",\"input\":{\"expression\":\"(1+2+3+4)*1000\"},\"output\":{\"result\":10000},\"error\":null,\"latency_ms\":0.394}",
+    "status": "success"
+  },
+  {
+    "role": "tool",
+    "tool_call_id": "call_004",
+    "name": "calculator",
+    "content": "{\"skill_name\":\"calculator\",\"status\":\"error\",\"input\":{\"expression\":\"1/0\"},\"output\":null,\"error\":{\"type\":\"ZeroDivisionError\",\"message\":\"division by zero\"},\"latency_ms\":0.315}",
+    "status": "error"
+  },
+  {
+    "role": "tool",
+    "tool_call_id": "call_005",
+    "name": "file_reader",
+    "content": "{\"skill_name\":\"file_reader\",\"status\":\"success\",\"input\":{\"path\":\"docs/agent_intro.txt\",\"max_chars\":2000},\"output\":{\"content\":\"Agent 系统通常由模型、工具、记忆和执行循环组成。\\n工具调用让模型能够读取本地文件、执行计算，并把结果用于后续回答。\\nMemory 为 Agent 提供全局知识和历史对话上下文。\\n\",\"num_chars\":92,\"source\":\"docs/agent_intro.txt\",\"truncated\":false},\"error\":null,\"latency_ms\":0.689}",
+    "status": "success"
+  },
+  {
+    "role": "tool",
+    "tool_call_id": "call_006",
+    "name": "file_reader",
+    "content": "{\"skill_name\":\"file_reader\",\"status\":\"success\",\"input\":{\"path\":\"docs/agent_intro.txt\",\"max_chars\":2000},\"output\":{\"content\":\"Agent 系统通常由模型、工具、记忆和执行循环组成。\\n工具调用让模型能够读取本地文件、执行计算，并把结果用于后续回答。\\nMemory 为 Agent 提供全局知识和历史对话上下文。\\n\",\"num_chars\":92,\"source\":\"docs/agent_intro.txt\",\"truncated\":false},\"error\":null,\"latency_ms\":0.115}",
+    "status": "success"
+  },
+  {
+    "role": "tool",
+    "tool_call_id": "call_007",
+    "name": "file_reader",
+    "content": "{\"skill_name\":\"file_reader\",\"status\":\"error\",\"input\":{\"path\":\"docs/agent_intro.txt\",\"max_chars\":true},\"output\":null,\"error\":{\"type\":\"ValueError\",\"message\":\"parameter max_chars must be integer\"},\"latency_ms\":0.016}",
+    "status": "error"
+  },
+  {
+    "role": "tool",
+    "tool_call_id": "call_008",
+    "name": "local_file_search",
+    "content": "{\"skill_name\":\"local_file_search\",\"status\":\"success\",\"input\":{\"query\":\"Agent\",\"root_dir\":\"docs\",\"top_k\":5},\"output\":{\"results\":[{\"path\":\"docs/agent_intro.txt\",\"score\":0.4618,\"snippet\":\"Agent 系统通常由模型、工具、记忆和执行循环组成。 工具调用让模型能够读取本地文件、执行计算，并把结果用于后续回答。 Memory 为 Agent 提供全局知识和历史对话上下文。\",\"filename_match\":true},{\"path\":\"docs/retrieval_probe_wls.txt\",\"score\":0.0,\"snippet\":\"WLS_TOOL_GROUNDING_TOKEN=ZEBRA-4829-RIVER This file exists only for the Retrieval V1 factual-grounding test.\",\"filename_match\":false},{\"path\":\"docs/search_skill_demo.md\",\"score\":0.0,\"snippet\":\"# Search Skill Demo  检索演示文档用于验证 local_file_search 工具。 当用户询问“检索演示 工具编排”时，搜索工具应能命中这个文件。 工具编排强调模型先决定调用哪个工具，再由运行时执行工具并把 Tool...\",\"filename_match\":false},{\"path\":\"docs/tool_calling.md\",\"score\":0.0,\"snippet\":\"# Tool Calling  模型负责决定是否调用工具，工具层负责校验和执行，运行时负责维护消息闭环。\",\"filename_match\":false}],\"total_scanned\":4,\"timed_out\":false,\"query_terms\":[\"agent\"]},\"error\":null,\"latency_ms\":2.986}",
+    "status": "success"
+  },
+  {
+    "role": "tool",
+    "tool_call_id": "call_009",
+    "name": "local_file_search",
+    "content": "{\"skill_name\":\"local_file_search\",\"status\":\"success\",\"input\":{\"query\":\"Agent\",\"root_dir\":\"docs\",\"top_k\":5},\"output\":{\"results\":[{\"path\":\"docs/agent_intro.txt\",\"score\":0.4618,\"snippet\":\"Agent 系统通常由模型、工具、记忆和执行循环组成。 工具调用让模型能够读取本地文件、执行计算，并把结果用于后续回答。 Memory 为 Agent 提供全局知识和历史对话上下文。\",\"filename_match\":true},{\"path\":\"docs/retrieval_probe_wls.txt\",\"score\":0.0,\"snippet\":\"WLS_TOOL_GROUNDING_TOKEN=ZEBRA-4829-RIVER This file exists only for the Retrieval V1 factual-grounding test.\",\"filename_match\":false},{\"path\":\"docs/search_skill_demo.md\",\"score\":0.0,\"snippet\":\"# Search Skill Demo  检索演示文档用于验证 local_file_search 工具。 当用户询问“检索演示 工具编排”时，搜索工具应能命中这个文件。 工具编排强调模型先决定调用哪个工具，再由运行时执行工具并把 Tool...\",\"filename_match\":false},{\"path\":\"docs/tool_calling.md\",\"score\":0.0,\"snippet\":\"# Tool Calling  模型负责决定是否调用工具，工具层负责校验和执行，运行时负责维护消息闭环。\",\"filename_match\":false}],\"total_scanned\":4,\"timed_out\":false,\"query_terms\":[\"agent\"]},\"error\":null,\"latency_ms\":0.098}",
+    "status": "success"
+  },
+  {
+    "role": "tool",
+    "tool_call_id": "call_010",
+    "name": "table_analyzer",
+    "content": "{\"skill_name\":\"table_analyzer\",\"status\":\"success\",\"input\":{\"path\":\"tables/results.csv\",\"max_rows_preview\":5,\"describe\":true},\"output\":{\"path\":\"tables/results.csv\",\"num_rows\":3,\"num_columns\":3,\"columns\":[\"task\",\"score\",\"latency\"],\"preview\":[{\"task\":\"read_file\",\"score\":\"92\",\"latency\":\"15.2\"},{\"task\":\"calculate\",\"score\":\"98\",\"latency\":\"3.1\"},{\"task\":\"search\",\"score\":\"88\",\"latency\":\"20.5\"}],\"describe\":{\"score\":{\"count\":3,\"min\":88.0,\"max\":98.0,\"mean\":92.66666666666667},\"latency\":{\"count\":3,\"min\":3.1,\"max\":20.5,\"mean\":12.933333333333332}},\"truncated\":false},\"error\":null,\"latency_ms\":0.773}",
+    "status": "success"
+  },
+  {
+    "role": "tool",
+    "tool_call_id": "call_011",
+    "name": "table_analyzer",
+    "content": "{\"skill_name\":\"table_analyzer\",\"status\":\"success\",\"input\":{\"path\":\"tables/results.csv\",\"max_rows_preview\":5,\"describe\":true},\"output\":{\"path\":\"tables/results.csv\",\"num_rows\":3,\"num_columns\":3,\"columns\":[\"task\",\"score\",\"latency\"],\"preview\":[{\"task\":\"read_file\",\"score\":\"92\",\"latency\":\"15.2\"},{\"task\":\"calculate\",\"score\":\"98\",\"latency\":\"3.1\"},{\"task\":\"search\",\"score\":\"88\",\"latency\":\"20.5\"}],\"describe\":{\"score\":{\"count\":3,\"min\":88.0,\"max\":98.0,\"mean\":92.66666666666667},\"latency\":{\"count\":3,\"min\":3.1,\"max\":20.5,\"mean\":12.933333333333332}},\"truncated\":false},\"error\":null,\"latency_ms\":0.093}",
+    "status": "success"
+  },
+  {
+    "role": "tool",
+    "tool_call_id": "call_012",
+    "name": "format_converter",
+    "content": "{\"skill_name\":\"format_converter\",\"status\":\"success\",\"input\":{\"text\":\"A\\\\nB\\\\nC\",\"target_format\":\"markdown\",\"output_filename\":\"converted_demo.md\"},\"output\":{\"formatted_text\":\"- A\\\\nB\\\\nC\",\"generated_file_path\":\"/root/siton-tmp/02_agent/20236548/agent_B_B1_B5_nextgen_dev/outputs/B3_tools/advanced/batch_stats_demo/converted_demo(4).md\"},\"error\":null,\"latency_ms\":0.707}",
+    "status": "success"
+  },
+  {
+    "role": "tool",
+    "tool_call_id": "call_013",
+    "name": "unknown_tool",
+    "content": "{\"skill_name\":\"unknown_tool\",\"status\":\"error\",\"input\":{\"foo\":\"bar\"},\"output\":null,\"error\":{\"type\":\"ValueError\",\"message\":\"tool is not available in basic_tools: unknown_tool\"},\"latency_ms\":0.0}",
+    "status": "error"
+  },
+  {
+    "role": "tool",
+    "tool_call_id": "call_014",
+    "name": "calculator",
+    "content": "{\"skill_name\":\"calculator\",\"status\":\"error\",\"input\":{},\"output\":null,\"error\":{\"type\":\"ValueError\",\"message\":\"missing required parameters: expression\"},\"latency_ms\":0.013}",
+    "status": "error"
+  }
+]
