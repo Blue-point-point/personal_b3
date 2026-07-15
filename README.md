@@ -220,14 +220,23 @@ python b3_tool_layer.py --tools_config ../configs/tools.yaml --toolset basic_too
 
 ### 4.6 基础功能结果截图
 
-建议插入以下截图：
 
-```text
+图 1：`tools_schema.json` 截图，展示 B3 从 `tools.yaml` 成功导出的工具说明结构。
+
 ![tools_schema.json 截图](docs/images/tools_schema.json.png)
+
+图 2：`tool_schema_report.json` 截图，展示当前导出的 toolset、工具数量和工具列表。
+
 ![tool_schema_report.json 截图](docs/images/tool_schema_report.json.png)
+
+图 3：`tool_messages.json` 截图，展示 B3 执行 `tool_calls` 后返回的标准 ToolMessage 结果。
+
 ![tool_messages.json 截图](docs/images/tool_messages.json.png)
+
+图 4：`tool_call_log.jsonl` 截图，展示单次工具调用的执行日志、状态和耗时记录。
+
 ![tool_call_log.jsonl 截图](docs/images/tool_call_log.json.png)
-```
+
 
 ---
 
@@ -294,12 +303,15 @@ python b3_tool_layer.py --tools_config ../configs/tools.yaml --retry_demo --outd
 
 #### 示例图片
 
-建议插入：
 
-```text
+图 5：`retry_demo_summary.json` 截图，展示重试演示中的最终状态、重试次数和恢复结果。
+
 ![retry_demo_summary.json 截图](docs/images/advanced/retry_demo_summary.json.png)
+
+图 6：`tool_call_log.jsonl` 中重试相关字段截图，重点展示 `retry_count`、`attempts_used`、`recovered_after_retry` 和 `last_error_type`。
+
 ![tool_call_log.jsonl 中 retry_count / recovered_after_retry 字段截图](docs/images/advanced/tool_call_log.json.png)
-```
+
 
 ### 5.3 进阶功能 2：支持 tool_call 结果缓存
 
@@ -367,13 +379,18 @@ python b3_tool_layer.py --tools_config ../configs/tools.yaml --toolset basic_too
 
 #### 示例图片
 
-建议插入：
 
-```text
-![tool_call_log.jsonl 中 cache_hit 字段截图](docs/images/advanced/tool_call_log.jsonl 中 cache_hit 字段截图.png)
-![tool_cache.json 截图](docs/images/advanced/tool_cache.json 截图.png)
+图 7：`tool_call_log.jsonl` 中缓存相关字段截图，重点展示 `cache_hit`、`result_source` 和 `cache_expired`。
+
+![tool_call_log.jsonl 中 cache_hit 字段截图](docs/images/advanced/tool_call_log.jsonl_cache_hit.png)
+
+图 8：`tool_cache.json` 截图，展示缓存条目已成功落盘保存。
+
+![tool_cache.json 截图](docs/images/advanced/tool_cache.json.png)
+
+图 9：`stats.json` 中缓存命中率相关字段截图，展示 `cache_hits` 和 `cache_hit_rate`。
 ![stats.json 中 cache_hit_rate 字段截图](docs/images/advanced/stats.json.png)
-```
+
 
 ### 5.4 进阶功能 3：统计调用次数、失败率、平均耗时
 
@@ -429,13 +446,19 @@ python b3_tool_layer.py --tools_config ../configs/tools.yaml --toolset basic_too
 
 #### 示例图片
 
-建议插入：
 
-```text
+图 10：`tool_calls_batch.json` 截图，展示自动构造的批量 tool_call 样例，包括成功、失败、重复和异常调用。
+
 ![tool_calls_batch.json 截图](docs/images/advanced/tool_calls_batch.json.png)
+
+图 11：`stats.json` 的 summary 部分截图，展示 `count`、`failure_rate` 和 `avg_latency_ms` 等核心指标。
+
 ![stats.json 中 count / failure_rate / avg_latency_ms 截图](docs/images/advanced/stats.json.png)
+
+图 12：`stats.json` 中 `by_tool` 截图，展示按工具分组的调用统计结果。
+
 ![by_tool 或 error_type_distribution 截图](docs/images/advanced/by_tool.png)
-```
+
 
 ---
 
